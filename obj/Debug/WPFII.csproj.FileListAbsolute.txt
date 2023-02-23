@@ -1,0 +1,16 @@
+C:\Users\Даниил Селезнев\source\repos\WPFII\obj\Debug\WPFII.csproj.AssemblyReference.cache
+C:\Users\Даниил Селезнев\source\repos\WPFII\obj\Debug\WPFII.csproj.SuggestedBindingRedirects.cache
+C:\Users\Даниил Селезнев\source\repos\WPFII\obj\Debug\App.g.cs
+C:\Users\Даниил Селезнев\source\repos\WPFII\obj\Debug\WPFII_MarkupCompile.cache
+C:\Users\Даниил Селезнев\source\repos\WPFII\bin\Debug\WPFII.exe.config
+C:\Users\Даниил Селезнев\source\repos\WPFII\bin\Debug\WPFII.exe
+C:\Users\Даниил Селезнев\source\repos\WPFII\bin\Debug\WPFII.pdb
+C:\Users\Даниил Селезнев\source\repos\WPFII\obj\Debug\MainWindow.g.cs
+C:\Users\Даниил Селезнев\source\repos\WPFII\obj\Debug\WPFII_MarkupCompile.lref
+C:\Users\Даниил Селезнев\source\repos\WPFII\obj\Debug\MainWindow.baml
+C:\Users\Даниил Селезнев\source\repos\WPFII\obj\Debug\WPFII.g.resources
+C:\Users\Даниил Селезнев\source\repos\WPFII\obj\Debug\WPFII.Properties.Resources.resources
+C:\Users\Даниил Селезнев\source\repos\WPFII\obj\Debug\WPFII.csproj.GenerateResource.cache
+C:\Users\Даниил Селезнев\source\repos\WPFII\obj\Debug\WPFII.csproj.CoreCompileInputs.cache
+C:\Users\Даниил Селезнев\source\repos\WPFII\obj\Debug\WPFII.exe
+C:\Users\Даниил Селезнев\source\repos\WPFII\obj\Debug\WPFII.pdb
