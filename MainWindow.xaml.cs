@@ -15,9 +15,7 @@ using System.Windows.Shapes;
 
 namespace WPFII
 {
-    /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
-    /// </summary>
+
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -25,35 +23,20 @@ namespace WPFII
             InitializeComponent();
         }
 
-        private void ButtonClick_Click(object sender, RoutedEventArgs e)
+        private void CreateButton_Click(object sender, RoutedEventArgs e)
         {
-
+            CreateNoteWindow createNoteWindow = new CreateNoteWindow();
+            createNoteWindow.Show();
         }
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
-
+            // Добавить логику для сохранения записи
         }
 
-        private void CreateButton_Click(object sender, RoutedEventArgs e)
+        private void ButtonClick_Click(object sender, RoutedEventArgs e)
         {
-
+            // Добавить логику для удаления записи
         }
-
-        private void Delete()
-        {
-
-        }
-
-        private void Save()
-        {
-
-        }
-
-        private void Create()
-        {
-
-        }
-
     }
 }
