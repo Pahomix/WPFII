@@ -29,7 +29,7 @@
         </ListView>
         <Border Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="1" BorderBrush="Black" BorderThickness="1" Margin="10"/>
         <Border Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="1" BorderBrush="Black" BorderThickness="1" Margin="10"/>
-        <DatePicker Grid.Column="1" Grid.ColumnSpan="2" Margin="241,10,10,11"/>
+        <DatePicker x:Name="DatePicker" SelectedDateChanged="DatePicker_SelectedDateChanged" Grid.Column="1" Grid.ColumnSpan="2" Margin="241,10,10,11"/>
         <Button x:Name="DeleteButton" Grid.Row="3" Grid.Column="0" Height="21" Margin="10" Width="100" Content="Удалить запись" Click="DeleteButton_Click"/>
         <Button Grid.Row="3" Grid.Column="1" Height="21" Margin="10" Width="100" Content="Создать" Click="CreateButton_Click"/>
         <Button Grid.Row="3" Grid.Column="2" Height="21" Margin="10" Width="100" Content="Редактировать" Click="EditButton_Click"/>

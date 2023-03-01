@@ -12,12 +12,14 @@ namespace WPFII
     /// </summary>
     public partial class CreateNoteWindow : Window
     {
+        private DateTime selectedDate;
         public Note Note { get; set; }
 
-        public CreateNoteWindow()
+        public CreateNoteWindow(DateTime selectedDate)
         {
             InitializeComponent();
             Note = new Note();
+            Note.CreatedAt = selectedDate;
             DataContext = Note;
         }
 
@@ -25,7 +27,6 @@ namespace WPFII
         {
             Note.Title = TitleTextBox.Text;
             Note.Content = ContentTextBox.Text;
-            Note.CreatedAt = DateTime.Now;
             DialogResult = true;
         }
 

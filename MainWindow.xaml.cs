@@ -28,12 +28,13 @@ namespace WPFII
         {
             InitializeComponent();
             LoadNotesFromFile();
+            DatePicker.SelectedDate = DateTime.Today;
             NotesListBox.ItemsSource = notes;
         }
 
         private void CreateButton_Click(object sender, RoutedEventArgs e)
         {
-            var createNoteWindow = new CreateNoteWindow();
+            var createNoteWindow = new CreateNoteWindow(DatePicker.SelectedDate.Value);
             createNoteWindow.ShowDialog();
 
             if (createNoteWindow.DialogResult.HasValue && createNoteWindow.DialogResult.Value)
@@ -41,8 +42,7 @@ namespace WPFII
                 var newNote = createNoteWindow.Note;
                 notes.Add(newNote);
                 SaveNotesToFile();
-                NotesListBox.ItemsSource = null;
-                NotesListBox.ItemsSource = notes;
+                UpdateNotesList();
             }
         }
 
@@ -87,14 +87,30 @@ namespace WPFII
 
         private void UpdateNotesList()
         {
-            notes.Clear();
             LoadNotesFromFile();
-            NotesListBox.ItemsSource = notes;
+            DateTime selectedDate = (DateTime)DatePicker.SelectedDate;
+            var filteredNotes = notes.Where(note => note.CreatedAt.Date == selectedDate.Date).ToList();
+            NotesListBox.ItemsSource = filteredNotes;
+        }
+
+        private void DatePicker_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
+        {
+            UpdateNotesList();
         }
 
         private void notesListBox_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            
+            Note selectedNote = NotesListBox.SelectedItem as Note;
+            EditNoteWindow editNoteWindow = new EditNoteWindow(selectedNote);
+
+            if (editNoteWindow.ShowDialog() == true)
+            {
+                Note editedNote = editNoteWindow.Note;
+                int index = notes.IndexOf(selectedNote);
+                notes[index] = editedNote;
+                SaveNotesToFile();
+                UpdateNotesList();
+            }
         }
     }
 
