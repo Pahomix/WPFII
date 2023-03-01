@@ -58,7 +58,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ViewNoteWindow.xaml.cs">
+      <DependentUpon>ViewNoteWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="CreateNoteWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditNoteWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -73,10 +80,17 @@
     <Compile Include="CreateNoteWindow.xaml.cs">
       <DependentUpon>CreateNoteWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="EditNoteWindow.xaml.cs">
+      <DependentUpon>EditNoteWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="ViewNoteWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Note.cs" />

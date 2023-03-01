@@ -10,7 +10,6 @@ namespace WPFII
     {
         public string Title { get; set; }
         public string Content { get; set; }
-        public bool IsDone { get; set; }
         public DateTime CreatedAt { get; set; }
     }
 }

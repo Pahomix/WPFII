@@ -11,12 +11,12 @@
 
         <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10">
             <Label Content="Title:" VerticalAlignment="Center"/>
-            <TextBox x:Name="TitleTextBox" Width="200" Margin="10"/>
+            <TextBox x:Name="TitleTextBox" Width="200" Margin="10" Text="Название заметки"/>
         </StackPanel>
 
         <StackPanel Grid.Row="1" Margin="10">
             <Label Content="Content:"/>
-            <TextBox x:Name="ContentTextBox" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Margin="10" Height="150"/>
+            <TextBox x:Name="ContentTextBox" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Margin="10" Height="150" Text="Описание заметки"/>
         </StackPanel>
 
         <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="10">

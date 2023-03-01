@@ -18,13 +18,20 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-
-        <Border Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="1" Grid.RowSpan="3" BorderBrush="Black" BorderThickness="1" Margin="10"/>
+        <ListView x:Name="NotesListBox" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Margin="10" MouseDoubleClick="notesListBox_MouseDoubleClick">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Title" DisplayMemberBinding="{Binding Title}" Width="150"/>
+                    <GridViewColumn Header="Content" DisplayMemberBinding="{Binding Content}" Width="400"/>
+                    <GridViewColumn Header="Created At" DisplayMemberBinding="{Binding CreatedAt}" Width="150"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
         <Border Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="1" BorderBrush="Black" BorderThickness="1" Margin="10"/>
         <Border Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="1" BorderBrush="Black" BorderThickness="1" Margin="10"/>
         <DatePicker Grid.Column="1" Grid.ColumnSpan="2" Margin="241,10,10,11"/>
-        <Button Grid.Row="3" Grid.Column="0" Height="21" Margin="10" Width="100" Content="Удалить запись" Click="ButtonClick_Click"/>
+        <Button x:Name="DeleteButton" Grid.Row="3" Grid.Column="0" Height="21" Margin="10" Width="100" Content="Удалить запись" Click="DeleteButton_Click"/>
         <Button Grid.Row="3" Grid.Column="1" Height="21" Margin="10" Width="100" Content="Создать" Click="CreateButton_Click"/>
-        <Button Grid.Row="3" Grid.Column="2" Height="21" Margin="10" Width="100" Content="Сохранить" Click="SaveButton_Click"/>
+        <Button Grid.Row="3" Grid.Column="2" Height="21" Margin="10" Width="100" Content="Редактировать" Click="EditButton_Click"/>
     </Grid>
 </Window>

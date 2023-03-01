@@ -16,3 +16,10 @@ C:\Users\Даниил Селезнев\source\repos\WPFII\obj\Debug\WPFII.exe
 C:\Users\Даниил Селезнев\source\repos\WPFII\obj\Debug\WPFII.pdb
 C:\Users\Даниил Селезнев\source\repos\WPFII\obj\Debug\CreateNoteWindow.baml
 C:\Users\Даниил Селезнев\source\repos\WPFII\obj\Debug\CreateNoteWindow.g.cs
+C:\Users\Даниил Селезнев\source\repos\WPFII\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Даниил Селезнев\source\repos\WPFII\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Даниил Селезнев\source\repos\WPFII\obj\Debug\WPFII.csproj.CopyComplete
+C:\Users\Даниил Селезнев\source\repos\WPFII\obj\Debug\EditNoteWindow.g.cs
+C:\Users\Даниил Селезнев\source\repos\WPFII\obj\Debug\EditNoteWindow.baml
+C:\Users\Даниил Селезнев\source\repos\WPFII\obj\Debug\ViewNoteWindow.g.cs
+C:\Users\Даниил Селезнев\source\repos\WPFII\obj\Debug\ViewNoteWindow.baml

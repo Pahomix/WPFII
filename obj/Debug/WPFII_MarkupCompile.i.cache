@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Даниил Селезнев\source\repos\WPFII\App.xaml
-21947676659
+482528440
 
-81383782062
+101190165181
 14363531425
-CreateNoteWindow.xaml;MainWindow.xaml;
+CreateNoteWindow.xaml;EditNoteWindow.xaml;MainWindow.xaml;ViewNoteWindow.xaml;
 
 True
 
